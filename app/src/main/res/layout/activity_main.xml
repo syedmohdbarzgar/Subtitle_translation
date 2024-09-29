@@ -88,12 +88,6 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <org.token.saba.views.widgets.SabaVisitor
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/search_bar"
-        android:layout_centerHorizontal="true" />
-
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

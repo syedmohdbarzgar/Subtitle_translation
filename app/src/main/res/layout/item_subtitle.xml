@@ -29,6 +29,6 @@
         android:id="@+id/btnEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ویرایش"
+        android:text="@string/edit"
         android:layout_gravity="end" />
 </LinearLayout>

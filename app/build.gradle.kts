@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "org.token.solana"
+    namespace = "org.syedmohdbarzgar.solana"
     compileSdk = 35
 
     buildFeatures {
@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "org.token.solana"
+        applicationId = "org.syedmohdbarzgar.solana"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

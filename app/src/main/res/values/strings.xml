@@ -39,4 +39,5 @@
     <string name="start_time_hh_mm_ss">Start Time (HH:MM:SS)</string>
     <string name="save">Save</string>
     <string name="there_was_an_error_saving_the_file">There was an error saving the file</string>
+    <string name="edit">edit</string>
 </resources>
