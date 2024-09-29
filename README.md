@@ -2,8 +2,8 @@
 
 **Subtitle_translation** is an Android project that allows users to translate subtitle files using **ML Kit** libraries. This project is designed to support multiple languages and helps you translate subtitles into other languages and save them.
 
-![Image 1](path/to/image1.png) <!-- Replace with your actual image path -->
-![Image 2](path/to/image2.png) <!-- Replace with your actual image path -->
+![Image 1](https://github.com/syedmohdbarzgar/Subtitle_translation/blob/master/app/src/main/assets/screenshots/main.jpg) <!-- Replace with your actual image path -->
+![Image 2](https://github.com/syedmohdbarzgar/Subtitle_translation/blob/master/app/src/main/assets/screenshots/translator.jpg) <!-- Replace with your actual image path -->
 
 ## Features
 
