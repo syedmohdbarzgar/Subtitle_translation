@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/main_toolbar"
+        style="@style/Theme.Solana.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/settings"
+        app:title="@string/app_name"
+        app:titleCentered="true" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/history_is_empty" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/search_bar"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_toolbar"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:cardCornerRadius="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:padding="@dimen/padding"
+                android:src="@drawable/search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/materialTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:hint="@string/search"
+                android:padding="@dimen/padding"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/img_remove"
+                app:layout_constraintStart_toEndOf="@+id/img_search"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:padding="@dimen/padding"
+                android:src="@drawable/close"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <org.token.saba.views.widgets.SabaVisitor
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/adContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_subtitle_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_new_project"
+        style="@style/Theme.Solana.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:icon="@drawable/add"
+        android:text="@string/new_project"/>
+
+</RelativeLayout>

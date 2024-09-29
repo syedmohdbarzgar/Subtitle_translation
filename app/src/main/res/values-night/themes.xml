@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Solana" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.Solana.Toolbar" parent="Widget.Material3.Toolbar">
+
+    </style>
+    <style name="Theme.Solana.FloatingActionButton" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+
+    </style>
+    <style name="Theme.Solana.CardView.Outlined" parent="Widget.Material3.CardView.Outlined">
+
+    </style>
+    <style name="Theme.Solana.CardView.Elevated" parent="Widget.Material3.CardView.Elevated">
+
+    </style>
+    <style name="Theme.Solana.CardView.Filled" parent="Widget.Material3.CardView.Filled">
+
+    </style>
+    <style name="Theme.Solana.LinearProgressIndicator" parent="Widget.Material3.LinearProgressIndicator">
+
+    </style>
+
+</resources>

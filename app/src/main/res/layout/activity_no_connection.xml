@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.NoConnectionActivity">
+
+    <!-- آیکون هشدار -->
+    <ImageView
+        android:id="@+id/iv_no_connection"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/wi_fi_off"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/padding_large" />
+
+    <!-- پیام خطا -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_connection_message"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_no_connection"
+        android:layout_marginTop="@dimen/margin_large" />
+
+
+</RelativeLayout>

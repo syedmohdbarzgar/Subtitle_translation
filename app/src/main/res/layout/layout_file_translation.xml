@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/margin_large"
+    style="@style/Theme.Solana.CardView.Outlined">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large">
+
+        <!-- عنوان -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/translation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_to_translate"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <!-- دکمه شروع ترجمه -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start_translation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_translation"
+            android:layout_marginTop="@dimen/margin_large" />
+
+        <!-- ProgressBar برای نمایش وضعیت ترجمه -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progress_translation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:indeterminate="false"
+            style="@style/Theme.Solana.LinearProgressIndicator"
+            android:visibility="invisible"/>
+
+        <!-- نمایش درصد پیشرفت ترجمه -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_progress_percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/progress"
+            android:layout_marginTop="@dimen/margin_small"
+            android:visibility="invisible"
+            android:textAppearance="?attr/textAppearanceBody1" />
+
+        <!-- نمایش پیام هشدار برای کاربر -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_warning_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_wait_exiting_the_app_will_stop_the_process"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="?attr/colorError"
+            android:visibility="invisible"
+            android:textAppearance="?attr/textAppearanceBody2" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

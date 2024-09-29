@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Theme.Solana.CardView.Outlined"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_large"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large">
+
+        <!-- عنوان -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/language_selection_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_source_and_target_languages"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <!-- یادآوری به کاربر درباره زبان مبدا و مقصد -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/language_selection_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/choose_the_source_and_target_languages_for_translation"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?attr/colorSecondary" />
+
+        <!-- Spinner برای انتخاب زبان مبدا -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/source_language_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/source_language"
+            android:textAppearance="?attr/textAppearanceBody1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/spinner_source_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="@string/source_language"
+            app:drawableEndCompat="@drawable/expand_arrow" />
+
+        <!-- Spinner برای انتخاب زبان مقصد -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/target_language_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/target_language"
+            android:textAppearance="?attr/textAppearanceBody1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/spinner_target_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="@string/target_language"
+            app:drawableEndCompat="@drawable/expand_arrow" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/translate"
+            android:layout_marginTop="@dimen/margin_large" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
